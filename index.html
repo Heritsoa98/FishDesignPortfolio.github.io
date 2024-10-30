@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Design</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Portfolio Fish Design</h1>
+        <p>Designer créatif spécialisé en design graphique et web</p>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Passion with Auto-Moto</h2>
+        <div class="project-gallery">
+            <div class="project" onclick="openModal('project1')">
+                <img src="Images/Golf GTI TC.png" alt="Projet 1">
+                <h3>Golf GTI TCR</h3>
+                <p> Volkswagen Golf GTI TC! 
+                    "Que ce soit sur route ou sur piste, la Golf GTI TCR est le maître incontesté de la vitesse et de la performance."</p>
+            </div>
+            <div class="project" onclick="openModal('project2')">
+                <img src="Images/Golf.png" alt="Projet 2">
+                <h3>Volkswagen Golf MK2!</h3>
+                <p>Ity angamba ny fiara bé mpankafy indrindra ! Klasika tsy manam-pahataperana manambatra ny lamaody taloha sy ny moderina. Miaraka amin'ny bika sport tsara, namana tonga lafatra ho an'ireo tia mitondra fiara.</p>
+            </div>
+            <div class="project" onclick="openModal('project3')">
+                <img src="Images/Jeep.png" alt="Projet 2">
+                <h3>Jeep Wrangler</h3>
+                <p>Miaraka amin'ny endriny miavaka, ity Jeep ity dia vonona hitondra anao na aiza na aiza, avy any amin'ny arabe an-tanàn-dehibe ka hatrany amin'ny lalana sarotra indrindra.
+                    Mpankafy Jeep 
+                    </p>
+            </div>
+            <div class="project" onclick="openModal('project4')">
+                <img src="Images/Lamborghini.png" alt="Projet 2">
+                <h3>Gelbe Lamborghini Aventador</h3>
+                <p>Hery sy hafainganam-pandeha! Miaraka amin'ity fiara mampanofinofy ity dia tsy ho tana mihitsy ny maso. Fiaran'ny nofinofy natao ho an'ireo olona tia kantokanto sy tanjaka. Tsy maintsy mbola hitondra azy ity indray andro any.</p>
+            </div>
+            <div class="project" onclick="openModal('project5')">
+                <img src="Images/Retro.png" alt="Projet 2">
+                <h3>Retro Cars</h3>
+                <p>Découvrez cette magnifique voiture vintage ! 
+                    Cette voiture classique allie élégance et charme d'antan. Avec ses lignes courbées et son style rétro, elle est un véritable bijou sur roues. Parfaite pour les amateurs de voitures anciennes et les passionnés de l'histoire automobile. Revivez les belles années avec cette merveilleuse voiture qui ne passe jamais inaperçue !</p>
+            </div>
+            <div class="project" onclick="openModal('project6')">
+                <img src="Images/Royal Enfield.png" alt="Projet 2">
+                <h3>Royal Enfield</h3>
+                <p>Découvrez cette superbe moto en camouflage marron, fusion parfaite entre style rétro et performances modernes. Conçue pour conquérir toutes les routes, elle se distingue par son design intemporel et son moteur puissant. Une véritable bête sauvage du monde du Café Racer.</p>
+            </div>
+            <!-- Ajoutez d'autres projets ici -->
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Projet Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
